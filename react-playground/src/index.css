@@ -1,0 +1,101 @@
+/* =========================
+   CSS RESET
+========================= */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   ROOT VARIABLES
+========================= */
+
+:root {
+  --font-family: "Inter", sans-serif;
+
+  --text-color: #222;
+  --background-color: #f8f9fa;
+  --primary-color: #2563eb;
+  --secondary-color: #64748b;
+
+  --max-width: 1200px;
+  --border-radius: 8px;
+}
+
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  background: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.5;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* =========================
+   MEDIA
+========================= */
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+/* =========================
+   FORM ELEMENTS
+========================= */
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =========================
+   LISTS
+========================= */
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+  width: min(90%, var(--max-width));
+  margin-inline: auto;
+}
