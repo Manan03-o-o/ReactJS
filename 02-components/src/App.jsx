@@ -1,12 +1,13 @@
 import React from 'react'
 import Card from './components/card.jsx'
-import NaNbar from './components/navbar.jsx'
+import Navbar from './components/Navbar.jsx'
 
 const App = () => {
   return (
     <div>
+      <Navbar />
       <Card />
-      <NavBa />
+     
     </div>
   )
 }
