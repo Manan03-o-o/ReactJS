@@ -1,101 +1,48 @@
-/* =========================
-   CSS RESET
-========================= */
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'helvetica neue';
+    color: #fff;
 }
-
-/* =========================
-   ROOT VARIABLES
-========================= */
-
-:root {
-  --font-family: "Inter", sans-serif;
-
-  --text-color: #222;
-  --background-color: #f8f9fa;
-  --primary-color: #2563eb;
-  --secondary-color: #64748b;
-
-  --max-width: 1200px;
-  --border-radius: 8px;
-}
-
-/* =========================
-   GLOBAL STYLES
-========================= */
-
-html {
-  font-size: 16px;
-  scroll-behavior: smooth;
-}
-
+html,
 body {
-  font-family: var(--font-family);
-  background: var(--background-color);
-  color: var(--text-color);
-  line-height: 1.5;
-  min-height: 100vh;
-  -webkit-font-smoothing: antialiased;
+    height: 100%;
+    width: 100%;
+}
+body{
+  background-color: #111;
 }
 
-/* =========================
-   MEDIA
-========================= */
 
-img,
-picture,
-svg,
-video {
-  display: block;
-  max-width: 100%;
+.parent{
+  padding: 20px;
+  display: flex;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  gap: 20px;
 }
-
-/* =========================
-   FORM ELEMENTS
-========================= */
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
+.card{
+  width: 300px;
+  border: 1px solid white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #222;
 }
-
-button {
+.card img{
+  height: 140px;
+  width: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.card p{
+  margin: 20px 0;
+}
+.card button{
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
   border: none;
-  background: none;
-  cursor: pointer;
-}
-
-/* =========================
-   LINKS
-========================= */
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* =========================
-   LISTS
-========================= */
-
-ul,
-ol {
-  list-style: none;
-}
-
-/* =========================
-   CONTAINER
-========================= */
-
-.container {
-  width: min(90%, var(--max-width));
-  margin-inline: auto;
+  border-radius: 5px;
 }
