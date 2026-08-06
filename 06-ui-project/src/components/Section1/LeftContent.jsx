@@ -1,10 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import HeroText from './HeroText'
+import Arrow from './Arrow'
 
 const LeftContent = props => {
   return (
-    <div className='h-full w-1/3 bg-blue-300'
-    >LeftContent</div>
+    <div className='h-full w-1/3 flex flex-col justify-between  ' >
+      <HeroText/>
+      <Arrow/>
+      
+      </div>
   )
 }
 
