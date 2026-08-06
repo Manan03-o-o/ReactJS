@@ -13,6 +13,5 @@ const LeftContent = props => {
   )
 }
 
-LeftContent.propTypes = {}
 
 export default LeftContent
