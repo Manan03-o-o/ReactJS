@@ -4,7 +4,7 @@ const App = () => {
   
   return (
     <div>
-      <input type="text" placeholder="Enter your name"/>
+     <button className='box'>Click Me</button>
     </div>
   )
 }

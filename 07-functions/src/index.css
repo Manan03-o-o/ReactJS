@@ -64,3 +64,9 @@ ol[class] {
     scroll-behavior: auto !important;
   }
 }
+.box{
+  height: 200px;
+  width: 200px;
+  background-color: red;
+
+}
