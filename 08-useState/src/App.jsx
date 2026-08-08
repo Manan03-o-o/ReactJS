@@ -8,11 +8,13 @@ const App = () => {
   function changeNum(){
     setNum(20)
     setUserName('bob')
+    setUsers([100, 200, 300, 400])
+
   }
   return (
     <div>
-      <h1>Value of num is {num}</h1>
-      <p>Username: {username}</p>
+      <h1>Value of num is {num} <br />{users.join(', ')}</h1>
+      <p>Username: {username} </p>
       <button onClick={changeNum}>click</button>
     </div>
   )
