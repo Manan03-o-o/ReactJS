@@ -1,13 +1,16 @@
 import React, { useState } from 'react'
 
 const App = () => {
-  const [num, setNum] = useState(0)
+  const [num, setNum] = useState(2)
 
   function increaseNum(){
+   setNum(num+1)
 
   } 
 
   function decreaseNum(){
+
+   setNum(num-1)
 
   }
 
