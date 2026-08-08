@@ -64,3 +64,15 @@ ol[class] {
     scroll-behavior: auto !important;
   }
 }
+button{
+  padding: 10px 20px;
+  margin: 20px;
+}
+h1{
+  background-color: rgb(207, 204, 204);
+  width:fit-content;
+  font-size: 100px;
+  padding: 10px 70px;
+  margin: 20px;
+  border-radius: 10px;
+}
