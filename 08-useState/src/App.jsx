@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const App = () => {
+  const [num, setNum] = useState(0)
   return (
     <div>
-      <h1>0</h1>
+      <h1>{num}
+      </h1>
       <button>increase</button>
       <button>decrease</button>
     </div>
