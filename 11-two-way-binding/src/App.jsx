@@ -12,7 +12,10 @@ const App = () => {
         submitHandler(e)
       }
       } >
-        <input type="text" placeholder="Enter your name" />
+        <input type="text" placeholder="Enter your name"
+        onChange={(e)=>{
+          console.log(e.target)
+        }} />
         <button type="submit">Submit</button>
       </form>
     </div>
