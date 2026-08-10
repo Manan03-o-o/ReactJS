@@ -6,7 +6,10 @@ const App = () => {
   }
   return (
     <div>
-      <form onSubmit={submitHandler}>
+      <form onSubmit={()=>{
+        submitHandler()
+      }
+      } >
         <input type="text" placeholder="Enter your name" />
         <button type="submit">Submit</button>
       </form>
