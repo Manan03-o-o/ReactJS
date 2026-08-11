@@ -9,8 +9,8 @@ const App = () => {
     <div className="h-screen bg-black text-white">
       <form onSubmit={(e)=>{
         submitHandler(e)
-      }} className="flex justify-between items-start   p-10">
-       <div className='flex items-start w-1/2 flex-col gap-4'>
+      }} className="flex justify-between items-start gap-4  flex-col p-10">
+       
          <input
           type="text"
           placeholder="Enter Notes Heading"
@@ -24,8 +24,11 @@ const App = () => {
         />
 
         <button className='bg-amber-50 w-full font-medium  text-black px-5 py-2 rounded'>Add Note</button>
-       </div>
+       
       </form>
+      <div>
+        <div ClassName='h-32 w-32 rounded-2xl bg-amber-50'></div>
+      </div>
     </div>
   )
 }
