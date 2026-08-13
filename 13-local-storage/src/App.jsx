@@ -1,7 +1,7 @@
 import React from 'react'
 
 const App = () => {
-  sessionStorage.setItem('name', 'John Doe')
+  sessionStorage.clear
   return (
     <div>App</div>
   )
