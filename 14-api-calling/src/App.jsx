@@ -6,7 +6,7 @@ const App = () => {
   }
   return (
     <div>
-      <button> Get Data</button>
+      <button onClick={getData}> Get Data</button>
     </div>
   )
 }
