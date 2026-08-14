@@ -2,7 +2,7 @@ import React from 'react'
 
 const App = () => {
   function getData() {
-    console.log('Get Data')
+   fetch('https://jsonplaceholder.typicode.com/todos/1')
   }
   return (
     <div>
