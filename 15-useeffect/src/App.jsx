@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const App = () => {
-  
-  }
-  
+  useEffect(function(){
+    
+  })
   return (
-    <div></div>
+    <div>
+
+    </div>
   )
 }
 
