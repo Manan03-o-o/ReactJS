@@ -1,8 +1,14 @@
 import React from 'react'
+import axios from 'axios'
 
 const App = () => {
-  const getData = ()=>{
-    console.log('data aa gaya');
+  const getData = async ()=>{
+
+  const [userData, setuserData] = useState([]);
+
+    const response = await axios.get('https://picsum.photos/v2/list?page=2&limit=100')
+    setuserData(response.data)
+    console.log(response.data)
 
   }
   return (
