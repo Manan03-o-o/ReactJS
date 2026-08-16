@@ -1,16 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import axios from 'axios'
 
 const App = () => {
-  const getData = async ()=>{
+  const [userData, setUserData] = useState([])
 
-  const [userData, setuserData] = useState([]);
-
+  const getData = async () => {
     const response = await axios.get('https://picsum.photos/v2/list?page=2&limit=100')
-    setuserData(response.data)
+    setUserData(response.data)
     console.log(response.data)
-
   }
+
   return (
     <div className='bg-black h-screen text-white'>
       <button
